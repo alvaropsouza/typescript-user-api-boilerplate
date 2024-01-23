@@ -9,9 +9,9 @@
     "description": "",
     "scripts": {
         "start": "dotenv -e .env -- ts-node -r tsconfig-paths/register src/main.ts",
-        "start:prod": "pnpm run schema:merge && prisma migrate deploy && pnpm start",
+        "start:prod": "pnpm run prisma:gen && prisma migrate deploy && pnpm start",
         "build": "tsc",
-        "schema:merge": "prisma generate",
+        "prisma:gen": "prisma generate",
         "prisma:mig": "prisma migrate dev",
         "dev": "ts-node-dev -r tsconfig-paths/register src/main.ts",
         "postinstall": "tsc",

@@ -17,7 +17,7 @@
 1. Install dependencies:
 
 ```
-npm i
+pnpm i
 ```
 
 &nbsp;
@@ -32,10 +32,10 @@ _This command should be executed in the same folder as the docker-compose.yml fi
 
 &nbsp;
 
-3. Run migrations on the database:
+3. Generate and run migrations:
 
 ```
-npm run prisma:mig
+pnpm run prisma:gen && pnpm run prisma:mig
 ```
 
 &nbsp;
@@ -53,7 +53,7 @@ _Will Pop a tab on your navigator in http://localhost:5555 providing you with a 
 Init server command:
 
 ```
-npm run dev
+pnpm run dev
 ```
 
 _You should now see a message like: "App listening on port 5000"_
@@ -73,13 +73,13 @@ Tests powered by jest and [**Prisma-jest plugin**](https://github.com/Quramy/jes
 Run all tests:
 
 ```
-npm run test
+pnpm run test
 ```
 
 Run all tests with coverage:
 
 ```
-npm run test:cov
+pnpm run test:cov
 
 ```
 
